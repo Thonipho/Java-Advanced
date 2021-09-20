@@ -15,7 +15,15 @@ public class PriminitiveTypesChallenge {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        byte byteValue = 10;
+        short shortValue = 2;
+        int intValue = 50;
+        
+        long longTotal = 50000L + 10L * (byteValue+shortValue+intValue);
+        System.out.println(longTotal);
+        
+        short shortTotal = (short) (1000 + 10 * (byteValue+shortValue+intValue));
     }
     
 }
