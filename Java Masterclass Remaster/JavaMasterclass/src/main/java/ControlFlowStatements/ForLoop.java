@@ -20,6 +20,14 @@ public class ForLoop {
         for(int i=1; i<9; i++){
             System.out.println("10 000 at " + i + "% interest:" + calculateInterest(10000,i));
         }
+        
+        System.out.println("*********************");
+        
+        //descending order
+        for(int i=8; i==2; i--){
+            System.out.println("10 000 at " + i + "% interest:" + calculateInterest(10000,i));
+        }
+        
     }
     
     public static double calculateInterest(double amount, double interestRate) {
