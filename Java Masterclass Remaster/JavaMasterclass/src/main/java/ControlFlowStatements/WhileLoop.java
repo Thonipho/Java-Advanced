@@ -31,12 +31,41 @@ public class WhileLoop {
             System.out.println("Count value is: " +i);
         }
         
+        System.out.println("*********************");
+        
         count = 1;
         //counting using a do while loop
         do{
             System.out.println("Count value was: " + count);
             count++;
-        } while (count !=0);
+        } while (count !=6);
+        
+        //displaying even numbers using while loop and method
+        int number = 4;
+        int finishNumber = 20;
+        int evenNumbersFound =0;
+        
+        while(number<=finishNumber){
+            number++;
+            
+            if(!isEvenNumber(number)) {
+                continue;
+            }
+            
+            System.out.println("Even Number " + number);
+            
+            evenNumbersFound++;
+            if(evenNumbersFound >=5) {
+                break;
+            }
+        }
+        
+        System.out.println("Total even numbers found: " + evenNumbersFound);
+    }
+    
+    public static boolean isEvenNumber(int number ) {
+        if(number%2 == 0) return true;
+        else return false;
     }
     
 }
