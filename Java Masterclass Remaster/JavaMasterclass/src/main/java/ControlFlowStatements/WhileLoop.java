@@ -40,6 +40,8 @@ public class WhileLoop {
             count++;
         } while (count !=6);
         
+        System.out.println("*********************");
+        
         //displaying even numbers using while loop and method
         int number = 4;
         int finishNumber = 20;
