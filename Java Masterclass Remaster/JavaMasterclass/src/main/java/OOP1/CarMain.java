@@ -9,7 +9,7 @@ package OOP1;
  *
  * @author User
  */
-public class Main {
+public class CarMain {
 
     /**
      * @param args the command line arguments
