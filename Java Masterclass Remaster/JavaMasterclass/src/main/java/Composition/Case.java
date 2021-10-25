@@ -13,10 +13,10 @@ public class Case {
     
     private String model;
     private String manufacturer;
-    private String powerSupply;
+    private int powerSupply;
     private Dimensions dimensions; 
 
-    public Case(String model, String manufacturer, String powerSupply, Dimensions dimensions) {
+    public Case(String model, String manufacturer, int powerSupply, Dimensions dimensions) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.powerSupply = powerSupply;
@@ -35,7 +35,7 @@ public class Case {
         return manufacturer;
     }
 
-    public String getPowerSupply() {
+    public int getPowerSupply() {
         return powerSupply;
     }
 
