@@ -27,7 +27,7 @@ public class Dog extends Animal {
     }
     
     private void chew(){
-        System.out.println("Animal chewed its food");
+        System.out.println("Dog.chew() called");
     }
 
     @Override
@@ -35,4 +35,6 @@ public class Dog extends Animal {
         chew();
         super.eat(); 
     }
+    
+    
 }

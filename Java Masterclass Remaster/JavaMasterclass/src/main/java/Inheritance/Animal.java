@@ -25,9 +25,9 @@ public class Animal {
         this.weight = weight;
     }
     
-    public void eat(){System.out.println("Animal has eaten");}
+    public void eat(){System.out.println("Animal.eat() called");}
     
-    public void move(){}
+    public void move(int speed){System.out.println("Moving at " + speed);}
 
     public String getName() {
         return name;
