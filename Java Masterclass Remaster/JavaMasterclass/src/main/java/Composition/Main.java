@@ -22,9 +22,7 @@ public class Main {
         Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2-64");
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
         
-        thePC.getMonitor().drawPixelAt(1300, 1200, "red");
-        thePC.getMotherboard().loadProgram("Window 1.0");
-        thePC.getTheCase().pressPowerButton();
+        thePC.powerUp();
     }
     
 }
