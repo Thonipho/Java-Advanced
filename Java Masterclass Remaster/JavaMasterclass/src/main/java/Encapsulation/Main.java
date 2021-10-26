@@ -25,6 +25,9 @@ public class Main {
 //        int damage = 10;
 //        player.loseHealth(damage);
 //        System.out.println("Remaining health: " + player.healthRemaining());
+
+EnhancedPlayer player = new EnhancedPlayer("Thoni", 200, "Dagger");
+System.out.println("Initial health is " + player.getHealth());
     }
     
 }
