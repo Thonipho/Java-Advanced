@@ -3,23 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOP1;
+package OOP;
 
 /**
  *
  * @author User
  */
-public class BankAccountMain {
+public class CarMain {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        BankAccount acc1 = new BankAccount(635463, 1200, "Greg", "greg@gmail.com", 0123203232);
+        Car porsche = new Car();
+        porsche.setModel("cayenne");
         
-        acc1.deposit(600);
-        acc1.withdraw(1000);
+        System.out.println("Model is " + porsche.getModel());
     }
     
 }

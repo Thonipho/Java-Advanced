@@ -3,23 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OOP1;
+package OOPTest;
 
 /**
  *
  * @author User
  */
-public class CarMain {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        Car porsche = new Car();
-        porsche.setModel("cayenne");
+        Hamburger burger = new Hamburger("brown", "chicken", new Additions("cheese", "lettuce"));
         
-        System.out.println("Model is " + porsche.getModel());
+        burger.getPrice();
     }
     
 }
