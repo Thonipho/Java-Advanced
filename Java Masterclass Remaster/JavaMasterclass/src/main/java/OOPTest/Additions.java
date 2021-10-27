@@ -7,7 +7,7 @@ package OOPTest;
 
 /**
  *
- * @author User
+ * @author T mav
  */
 public class Additions {
     

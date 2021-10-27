@@ -7,7 +7,7 @@ package OOPTest;
 
 /**
  *
- * @author User
+ * @author T maV
  */
 public class Main {
 
@@ -17,8 +17,14 @@ public class Main {
     public static void main(String[] args) {
         
         Hamburger burger = new Hamburger("brown", "chicken", new Additions("cheese", "lettuce"));
+        DeluxeBurger burger2 = new DeluxeBurger("brown", "chicken");
+        HealthyBurger burger3 = new HealthyBurger("brown", "chicken", new Additions("tomato", "lettuce"));
         
         burger.getPrice();
+        System.out.println("........................");
+        burger2.getPrice();
+        System.out.println("........................");
+        burger3.getPrice();
     }
     
 }
