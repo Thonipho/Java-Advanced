@@ -48,7 +48,7 @@ public class GroceryListMain {
                     searchForItem();
                     break;
                 case 6: 
-                    quite = true;
+                    quit = true;
                     break;
             }
         }
@@ -64,4 +64,34 @@ public class GroceryListMain {
         System.out.println("\t To quit app");
     }
     
+    public static void addItem(){
+        System.out.println("Please enter item: ");
+        groceryList.addGroceryItem(scanner.nextLine());
+    }
+    
+    public static void modifyItem(){
+        System.out.println("Please enter item number: ");
+        int position = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Please enter new item: ");
+        String item = scanner.nextLine();
+        groceryList.modifyGroceryList(position-1, item);
+    }
+    
+    public static void removeItem(){
+        System.out.println("Please enter item number: ");
+        int position = scanner.nextInt();
+        scanner.nextLine();
+        groceryList.removeGroceryItem(position);
+    }
+    
+    public static void searchForItem(){
+        System.out.println("Please enter item you looking for: ");
+        String searchItem = scanner.nextLine();
+        if(groceryList.findItem(searchItem) != null){
+            System.out.println("Found " + searchItem);
+        } else {
+            System.out.println(searchItem + "not found");
+        }
+    }
 }

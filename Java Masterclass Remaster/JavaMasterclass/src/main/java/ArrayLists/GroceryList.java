@@ -15,13 +15,16 @@ import java.util.Scanner;
 public class GroceryList {
 
     private ArrayList<String> groceryList = new ArrayList<String>();
+    
+    public void printGroceryList(){
+        if(groceryList.size()>0)
+            System.out.println(groceryList.toString());
+        else
+            System.out.println("Your grocery list is empty");
+    }
 
     public void addGroceryItem(String item) {
-
-        System.out.println("You have " + groceryList.size() + " items in your grocery list");
-        for (int i = 0; i < groceryList.size(); i++) {
-            System.out.println(i + ". " + groceryList.get(i));
-        }
+        groceryList.add(item);
     }
 
     public void modifyGroceryList(int position, String newItem) {
