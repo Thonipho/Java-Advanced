@@ -22,9 +22,28 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
         
-        Team adelaideCrows = new Team ("Adelaide Crows");
+        Team<FootballPlayer> adelaideCrows = new Team<> ("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
-        adelaideCrows.addPlayer(pat);
-        adelaideCrows.addPlayer(beckham);
+//      adelaideCrows.addPlayer(pat);
+//      adelaideCrows.addPlayer(beckham);
+
+        System.out.println(adelaideCrows.numPlayers());
+        
+        Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
+        baseballTeam.addPlayer(pat);
+        
+        Team<FootballPlayer> Kansa = new Team<>("Kansa City");
+        FootballPlayer Banks = new FootballPlayer("Banks");
+        Kansa.addPlayer(Banks);
+        
+        Team<FootballPlayer> Hawthorns = new Team<>("Hawthorns");
+        Team<FootballPlayer> Fremantle = new Team<>("Fremantle");
+        
+        Hawthorns.matchResult(Fremantle, 1, 0);
+        Hawthorns.matchResult(adelaideCrows, 3, 8);
+        adelaideCrows.matchResult(Fremantle, 1, 0);
+        adelaideCrows.matchResult(baseballTeam, 1, 0);
+        
+        
     }
 }
